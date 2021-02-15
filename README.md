@@ -6,7 +6,7 @@ To see what I mean, run `vite` in this repo and open devtools. Reload so that th
 
 ![Transformation applied](images/a.png)
 
-If you acces `/main.js` directly, you get the untransformed file:
+If you access `/main.js` directly, you get the untransformed file:
 
 ![Transformation not applied](images/b.png)
 
