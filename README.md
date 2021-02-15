@@ -12,5 +12,6 @@ If you access `/main.js` directly, you get the untransformed file:
 
 Two questions:
 
-1. How is Vite doing this?! How does it differentiate between imports (that require a transformation) and regular requests?
+1. ~~How is Vite doing this?! How does it differentiate between imports (that require a transformation) and regular requests?~~
+    * Ok, I see what's going on — `transformMiddleware` checks whether `req.headers.accept?.includes('text/html')`
 2. What's the rationale for this behaviour? It feels like things would be more predictable and debuggable if the response was the same in both cases (I'm currently experiencing difficulties getting CSS to work correctly with SSR'd responses because of this issue)
